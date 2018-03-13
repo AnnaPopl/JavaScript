@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Урок по JS 1</title>
+
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	
+		<!-- fancybox.js -->
+	<script src="js/jquery.fancybox.min.js"></script>
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+		<!-- swiper -->
+	<script src="js/swiper.min.js"></script>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script>
+		 $(document).ready(function () {
+    		//initialize swiper when document ready
+    		var mySwiper = new Swiper ('.swiper-container', {
+      		// Optional parameters
+      		 // Navigation arrows
+    		navigation: {
+      		nextEl: '.swiper-button-next',
+      		prevEl: '.swiper-button-prev',
+    },
+       		loop: true
+    		})
+  		});
+	</script>
+			
+
+</head>
+<body>
+	<a data-fancybox="gallery" href="img/big_1.jpg"><img src="img/small_1.jpg"></a>
+	<a data-fancybox="gallery" href="img/big_2.jpg"><img src="img/small_2.jpg"></a>
+	<a data-fancybox="gallery" href="img/big_3.jpg"><img src="img/small_3.jpg"></a>
+	<a data-fancybox="gallery" href="img/big_4.jpg"><img src="img/small_4.jpg"></a>
+	<a data-fancybox="gallery" href="img/big_5.jpg"><img src="img/small_5.jpg"></a>
+	<a data-fancybox="gallery" href="img/big_6.jpg"><img src="img/small_6.jpg"></a>
+
+	<!-- Slider main container -->
+	<div class="swiper-container">
+	    <!-- Additional required wrapper -->
+	    <div class="swiper-wrapper">
+	        <!-- Slides -->
+	        <div class="swiper-slide"><a data-fancybox="gallery" href="img/big_1.jpg"><img src="img/small_1.jpg"></a></div>
+	        <div class="swiper-slide"><a data-fancybox="gallery" href="img/big_2.jpg"><img src="img/small_2.jpg"></a></div>
+	        <div class="swiper-slide"><a data-fancybox="gallery" href="img/big_3.jpg"><img src="img/small_3.jpg"></a></div>
+	        <div class="swiper-slide"><a data-fancybox="gallery" href="img/big_4.jpg"><img src="img/small_4.jpg"></a></div>
+	        <div class="swiper-slide"><a data-fancybox="gallery" href="img/big_5.jpg"><img src="img/small_5.jpg"></a></div>
+	        <div class="swiper-slide"><a data-fancybox="gallery" href="img/big_6.jpg"><img src="img/small_6.jpg"></a></div>
+	        ...
+	    </div>
+	    <!-- If we need pagination -->
+	    <div class="swiper-pagination"></div>
+	 
+	    <!-- If we need navigation buttons -->
+	    <div class="swiper-button-prev"></div>
+	    <div class="swiper-button-next"></div>
+	 
+	</div>
+	
+</body>
+</html>
